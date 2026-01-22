@@ -1,0 +1,8 @@
+#UserID,password,userRole,firstName,lastName,email,phoneNum,address,dob
+1,pass123,Employee,John,Doe,john.doe@shelter.org,555-1111-9999,123 Maple St,1988-04-10
+2,caring1,Employee,Sarah,Lee,sarah.lee@shelter.org,555-2222-2938,345 Oak St,1990-08-21
+3,manager1,Employee,Linda,Park,linda.park@shelter.org,555-3333-2978,789 Pine St,1985-12-02
+4,adoptme,Adopter,Jane,Smith,jane.smith@gmail.com,555-4444-9127,22 Elm St,1995-09-25
+5,petlover,Adopter,Mark,Johnson,mark.j@gmail.com,555-5555-4716,56 Birch St,1999-03-14
+6,turle,Employee,Carol,Mason,carol.mason@gmail.com,381-247-8929,21 Bennet St,2001-06-23
+9,devil,Adopter,Emily,Blunt,emily.blunt@gmail.com,716-284-5859,874 Steven St,1984-04-12

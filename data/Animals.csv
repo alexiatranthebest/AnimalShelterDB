@@ -1,0 +1,6 @@
+animalID,name,ward,breed,sex,healthStatus,yearOfBirth,arrivalDate,adoptionDate
+1,Buddy,Dog,Labrador,male,Healthy,2020,2024-05-10,\N
+2,Bella,Cat,Siamese,female,Healthy,2021,2024-06-01,2025-01-20
+3,Fluffy,Rabbit,Dwarf,male,Healthy,2022,2024-10-12,\N
+4,Tweety,Bird,Canary,female,Healthy,2023,2024-11-01,\N
+5,Nibbles,Rodent,Hamster,female,Healthy,2022,2024-01-03,2024-03-25

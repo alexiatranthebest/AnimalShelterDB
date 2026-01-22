@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Animal</title>
+</head>
+<body>
+
+<h2>Update Animal In Database</h2>
+
+<form action="../actions/update_animal.php" method="POST">
+
+    <!-- Animal ID -->
+    <label for="animalID">Animal ID:</label>
+    <input type="text" id="animalID" name="animalID" placeholder="Enter the animal ID" required>
+    <br><br>
+
+    <!-- Ward -->
+    <label for="ward">Ward:</label>
+    <select id="ward" name="ward">
+        <option value="">-- select --</option>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Bird">Bird</option>
+        <option value="Rabbit">Rabbit</option>
+        <option value="Rodent">Rodent</option>
+    </select>
+    <br><br>
+
+    <!-- Sex -->
+    <label for="sex">Sex:</label>
+    <select id="sex" name="sex">
+        <option value="">-- select --</option>
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Intersex">Intersex</option>
+    </select>
+    <br><br>
+
+    <!-- Year of Birth -->
+    <label for="birth">Year of Birth:</label>
+    <input type="text" id="birth" name="birth" placeholder="Enter the year of birth">
+    <br><br>
+
+    <!-- Health Status -->
+    <label for="healthStatus">Health Status Notes:</label>
+    <input type="text" id="healthStatus" name="healthStatus" placeholder="Enter health status">
+    <br><br>
+
+    <!-- Arrival Date -->
+    <label for="arrivalDate">Arrival Date:</labe

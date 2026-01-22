@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Animal Shelter - Login Page</title>
+    <link rel="stylesheet" href="login_styling.css">
+</head>
+<body>
+    <h1><b>Local Animal Shelter</b></h1>
+
+    <form action ="login.php" method="POST">
+        <div class="container">
+            <h2><b>Welcome Back</b></h2>
+            <h3>Sign in to your account</h3>
+            <label for="user"><b>User ID</b></label>
+            <input type="text" id="user" name="user" placeholder="Enter User ID" 
+                    pattern="[0-9]+" title="User ID must contain only numbers" required><br>
+
+            <label for="pass"><b>Password</b></label>
+            <input type="password" id="pass" name="pass" placeholder="Enter Password" required><br><br>
+
+            <input type="checkbox" id="remember" name="remember" checked>
+            <label for="remember">Remember me</label>
+            <button type="submit">Login</button><br>
+
+            <p><a href="forgot_password.html">Forgot Password?</a></p>
+            <p>Don't have an account? <a href="signup.html">Sign up</a></p>
+        </div>
+    </form>
+
+    <!-- show error messages (if user doesn't exist in database)-->
+    <!-- make sure userID is only ints -->
+    <script>
+        window.addEventListener('DOMContentLoaded', function(){
+            const urlParams = new URLSearchParams(window.location.search);
+            const error = urlParams.get('error');
+
+            if (error === 'notfound') {
+                alert('User not found. Please check your User ID.');
+            } else if (error === 'invalid') {
+                alert('Invalid User ID or Password.');
+            } else if (error === 'empty') {
+                alert('Please fill in all fields.');
+            }
+        });
+
+        document.getElementById('user').addEventListener('input', function(e) {
+            this.value = this.value.replace(/[^0-9]/g, '');
+        });
+
+        document.querySelector('form').addEventListener('submit', function(e) {
+            const userID = document.getElementById('user').value;
+            if (!/^[0-9]+$/.test(userID)) {
+                e.preventDefault();
+                alert('User ID must only contain numbers');
+                return false;
+            }
+        });
+    </script>
+</body>
+</html>

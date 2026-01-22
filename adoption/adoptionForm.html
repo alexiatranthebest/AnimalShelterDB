@@ -1,0 +1,47 @@
+<?php include "db.php"; ?>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Adoption Application</title>
+</head>
+<body>
+
+<h2>Animal Adoption Application</h2>
+
+<form action="submit_adoption.php" method="POST">
+
+    <!-- AdopterID input -->
+    <label for="userID">User ID:</label>
+    <input type="number" name="userID" id="userID" required>
+    <br><br>
+
+    <!-- Animals dropdown (dynamic from DB) -->
+    <label for="animalID">Select Animal:</label>
+    <select name="animalID" id="animalID" required>
+        <?php
+        $sql = "SELECT animalID, name, ward FROM Animals WHERE adoptionStatus='Available'";
+        $result = $conn->query($sql);
+
+        while ($row = $result->fetch_assoc()) {
+            echo "<option value='{$row['animalID']}'>
+                    {$row['name']} - {$row['ward']}
+                  </option>";
+        }
+        ?>
+    </select>
+    <br><br>
+
+    <!-- Request date -->
+    <label for="requestDate">Adoption Request Date:</label>
+    <input type="date" name="requestDate" id="requestDate" required>
+    <br><br>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+
+</form>
+
+</body>
+</html>

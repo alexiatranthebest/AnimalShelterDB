@@ -1,0 +1,25 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    background: #f5f5f5;
+}
+
+.menu {
+    margin-top: 40px;
+}
+
+.btn {
+    display: block;
+    margin: 15px auto;
+    padding: 15px 25px;
+    width: 260px;
+    background: #3498db;
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.btn:hover {
+    background: #2980b9;
+}

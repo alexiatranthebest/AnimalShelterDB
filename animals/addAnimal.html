@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Animal</title>
+</head>
+<body>
+
+<h2>Add Animal To Database</h2>
+
+<form method="POST" action="addAnimal.php">
+
+    <label>Animal ID:</label>
+    <input type="number" name="animalID" required>
+    <br><br>
+
+    <label>Animal Name:</label>
+    <input type="text" name="name" required>
+    <br><br>
+
+    <label>Ward:</label>
+    <select name="ward" required>
+        <option value="Dog">Dog</option>
+        <option value="Cat">Cat</option>
+        <option value="Rabbit">Rabbit</option>
+        <option value="Bird">Bird</option>
+        <option value="Rodent">Rodent</option>
+    </select>
+    <br><br>
+
+    <label>Breed:</label>
+    <input type="text" name="breed">
+    <br><br>
+
+    <label>Sex:</label>
+    <select name="sex">
+        <option value="Female">Female</option>
+        <option value="Male">Male</option>
+        <option value="Intersex">Intersex</option>
+    </select>
+    <br><br>
+
+    <label>Year of Birth:</label>
+    <input type="text" name="yearOfBirth">
+    <br><br>
+
+    <label>Health Status:</label>
+    <input type="text" name="healthStatus">
+    <br><br>
+
+    <label>Arrival Date:</label>
+    <input type="date" name="arrivalDate" required>
+    <br><br>
+
+    <button type="submit">Submit</button>
+</form>
+
+
+</body>
+</html>
+
+
